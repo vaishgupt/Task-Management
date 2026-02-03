@@ -1,0 +1,237 @@
+/* === Base (like photo: light yellow app background) === */
+.app {
+  min-height: 100vh;
+  background: #fdf5d9;
+  font-family: sans-serif;
+}
+
+/* === Screen wrapper: yellow bg, center content === */
+.screen {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === White card (rounded, shadow) - larger === */
+.card {
+  background: #fff;
+  border-radius: 28px;
+  padding: 36px;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card--center {
+  text-align: center;
+}
+
+.card__img {
+  max-width: 260px;
+  margin-bottom: 20px;
+}
+
+.card h1 {
+  color: #333;
+  font-size: 1.85rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.card__sub {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0 0 24px 0;
+}
+
+.card p {
+  color: #555;
+  font-size: 1.05rem;
+  margin: 0 0 18px 0;
+}
+
+.card__link {
+  margin-top: 20px;
+  font-size: 1.05rem;
+  color: #555;
+}
+
+/* === Gold/yellow primary button === */
+.btn {
+  background: #f4c94f;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 32px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover:not(:disabled) {
+  background: #e6b83d;
+}
+
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.btn--small {
+  padding: 12px 22px;
+  font-size: 1.05rem;
+}
+
+/* === Links: gold color === */
+a {
+  color: #f4c94f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Form & inputs === */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.form input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}
+
+.form input::placeholder {
+  color: #999;
+}
+
+.form .btn {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.error {
+  color: #c00;
+  font-size: 1rem;
+  margin: 0 0 10px 0;
+}
+
+/* === Todo screen === */
+.todo-card {
+  max-width: 560px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.todo-header {
+  background: #f4c94f;
+  padding: 28px 36px;
+  text-align: center;
+}
+
+.todo-header__img {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  margin-bottom: 10px;
+}
+
+.todo-header__title {
+  color: #fff;
+  font-size: 1.45rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.todo-content {
+  padding: 24px 36px 36px;
+}
+
+.todo-add {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.todo-add input {
+  flex: 1;
+  padding: 14px 18px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+/* "Daily task" - centered below input */
+.todo-list__heading {
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 14px 0;
+  text-align: center;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid #eee;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item__checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #f4c94f;
+  cursor: pointer;
+}
+
+.todo-item__text {
+  flex: 1;
+  color: #333;
+  font-size: 1.05rem;
+}
+
+.todo-item__text.done {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-item__delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 1rem;
+}
+
+.todo-item__delete:hover {
+  opacity: 0.8;
+}
